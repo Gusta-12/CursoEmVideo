@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png"> <!--Source Media Type--> <!--Muda a imagem dependendo do tamanho da guia-->
+        <img src="img/foto-g.png" alt="imagem flexível"> <!-- Ou se começa pela foto G, ou se começa pela foto P -->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/ex011.mp3" type="audio/mpeg"><!--source src--> <!-- MP3 -> mpeg-->
+        <source src="midia/ex011.ogg" type="audio/ogg"> <!-- se o navegador não tiver compatibilidade com mp3 -->
+        <source src="midia/ex011.wav" type="audio/wav"> <!-- se o navegador não tiver compatibilidade com ogg, wav é mais pesado --> 
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/ex011.mp3">Clique aqui para baixar o arquivo MP3.</a></p> <!-- se o navegador não puder reproduzir nenhum dos tipos de áudios -->
+    </audio>
+    <!--<audio src="midia/ex011.mp3" controls autoplay></audio>Compativel com: MP3 WAV OGG-->
+</body>
+</html>
