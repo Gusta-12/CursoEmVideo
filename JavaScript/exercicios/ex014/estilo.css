@@ -1,0 +1,34 @@
+body {
+    font: normal 15pt Arial;
+    background-color: darkblue;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    padding: 15px;
+    margin: auto; /* CENTRALIZA */
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.473);
+}
+
+div > p {
+    margin: 0;
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+}
